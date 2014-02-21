@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/card_bg"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/card_top_container"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="38dp">
+
+        <ImageView
+            android:id="@+id/card_top_icon"
+            android:layout_width="wrap_content"
+            android:minWidth="20dp"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/card_top_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingRight="10dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/card_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/card_top_more"
+            android:layout_toRightOf="@id/card_top_icon"
+            android:text="新浪新闻" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/card_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@id/card_top_container">
+
+        <ImageView
+            android:id="@+id/card_content_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/card_content_img"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/card_content_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:text="重庆打黑弄讯贵安时芝加哥夲xxsdfads" />
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/card_content_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:gravity="bottom"
+                android:text="2013年10月17日，重庆市公安局沙坪坝分局陈家桥派出所所长吴炯被重庆市检察院来人带坪坝分局陈家桥派出所所长吴炯被重庆市检察院来人带坪坝分局陈家桥派出所所长吴炯被重庆市检察院来人带坪坝分局陈家桥派出所所长吴炯被重庆市检察院来人带坪坝分局陈家桥派出所所长吴炯被重庆市检察院来人带走..." />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_bottom_container"
+        android:layout_below="@id/card_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/cards_bottom_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:src="@drawable/arrow_top" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
